@@ -1,0 +1,736 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+/* logo por encima de la primer linea azul*/
+.logoscabeza {
+  margin-top: 3%;
+  text-align: center;
+}
+@media (min-width: 1080px) {
+  .logoscabeza {
+    text-align: left;
+  }
+}
+.logoscabeza .redondo {
+  width: 25%;
+  margin: 5px 10px;
+}
+.logoscabeza .letras {
+  width: 50%;
+  margin: 5px 10px;
+}
+@media (min-width: 500px) {
+  .logoscabeza .redondo {
+    width: 22%;
+    margin: 5px 15px;
+  }
+  .logoscabeza .letras {
+    width: 40%;
+    margin: 5px 15px;
+  }
+}
+@media (min-width: 720px) {
+  .logoscabeza .redondo {
+    width: 18%;
+    margin: 5px 20px;
+  }
+  .logoscabeza .letras {
+    width: 32%;
+    margin: 5px 20px;
+  }
+}
+@media (min-width: 1080px) {
+  .logoscabeza .redondo {
+    width: 13%;
+    margin-left: 10%;
+  }
+  .logoscabeza .letras {
+    width: 25%;
+    margin-left: 12%;
+  }
+}
+@media (min-width: 1400px) {
+  .logoscabeza .redondo {
+    width: 10%;
+    margin-left: 10%;
+  }
+  .logoscabeza .letras {
+    width: 22%;
+    margin-left: 17%;
+  }
+}
+@media (min-width: 1700px) {
+  .logoscabeza .redondo {
+    width: 8%;
+    margin-left: 10%;
+  }
+  .logoscabeza .letras {
+    width: 15%;
+    margin-left: 23%;
+  }
+}
+
+/* navegador por enciuma de la primer linea azul*/
+.navegador {
+  width: 100%;
+}
+.navegador ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.navegador li a {
+  color: #00487B;
+  font-weight: bolder;
+  font-size: 25px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 15px;
+}
+@media (min-width: 720px) {
+  .navegador li a {
+    font-size: 27px;
+    padding: 5px 25px;
+  }
+}
+@media (min-width: 720px) {
+  .navegador li a {
+    font-size: 27px;
+    padding: 5px 50px;
+  }
+}
+@media (min-width: 1080px) {
+  .navegador li a {
+    font-size: 27px;
+    padding: 5px 60px;
+  }
+}
+@media (min-width: 1400px) {
+  .navegador li a {
+    font-size: 27px;
+  }
+  .navegador li a:hover {
+    transition: 0.5s;
+    color: black;
+    font-size: 30px;
+  }
+}
+
+/* linea de mejores 3 */
+h3 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding: 5px;
+  font-size: 24px;
+  color: white;
+  background-color: #00487B;
+}
+@media (min-width: 720px) {
+  h3 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+}
+@media (min-width: 1400px) {
+  h3 {
+    background-size: 40px;
+  }
+}
+
+.tarjetas-caja {
+  padding: 2px;
+  margin-top: 12px;
+  margin-left: 2px;
+  margin-right: 2px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 720px) {
+  .tarjetas-caja {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 15px 8%;
+  }
+}
+
+.tarjetas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.tarjetas h4 {
+  margin: 10px 5px;
+  font-size: 24px;
+  color: #00487B;
+  text-align: center;
+  grid-row: 1/2;
+}
+@media (min-width: 550px) {
+  .tarjetas h4 {
+    font-size: 26px;
+  }
+}
+@media (min-width: 720px) {
+  .tarjetas h4 {
+    height: 70px;
+    margin-top: 15px;
+    font-size: 28px;
+    color: #00487B;
+  }
+}
+.tarjetas p {
+  margin: 10px 5px;
+  font-size: 18px;
+  color: black;
+  text-align: center;
+  grid-row: 2/3;
+}
+@media (min-width: 550px) {
+  .tarjetas p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 720px) {
+  .tarjetas p {
+    height: 78px;
+    margin-bottom: 15px;
+    font-size: 22px;
+  }
+}
+.tarjetas img {
+  width: 80%;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+@media (min-width: 550px) {
+  .tarjetas img {
+    width: 70%;
+  }
+}
+@media (min-width: 720px) {
+  .tarjetas img {
+    width: 80%;
+  }
+}
+
+/* main por debajo de la 1er linea */
+.lorem {
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px 8px;
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-size: 17px;
+}
+@media (min-width: 550px) {
+  .lorem {
+    font-size: 20px;
+  }
+}
+@media (min-width: 720px) {
+  .lorem {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1080px) {
+  .lorem {
+    font-size: 24px;
+    margin: 20px 30px;
+  }
+}
+
+/* apartado de horarios y mapa */
+h5 {
+  color: #00487B;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+}
+@media (min-width: 550px) {
+  h5 {
+    font-size: 26px;
+  }
+}
+@media (min-width: 720px) {
+  h5 {
+    font-size: 28px;
+  }
+}
+
+.horariodirecc {
+  background-color: #e2e2e2;
+  padding: 5px;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.horariodirecc ol {
+  text-align: center;
+}
+@media (min-width: 1080px) {
+  .horariodirecc ol {
+    text-align: left;
+  }
+}
+
+.dias {
+  width: 50%;
+  list-style: none;
+  text-align: left;
+  line-height: 42px;
+}
+@media (min-width: 550px) {
+  .dias {
+    padding-left: 14%;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+@media (min-width: 720px) {
+  .dias {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1080px) {
+  .dias {
+    padding-left: 100px;
+    font-size: 20px;
+    width: 25%;
+    line-height: 55px;
+  }
+}
+
+.horarios {
+  width: 50%;
+  list-style: none;
+  text-align: left;
+  line-height: 42px;
+}
+@media (min-width: 550px) {
+  .horarios {
+    padding-right: 14%;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+@media (min-width: 720px) {
+  .horarios {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1080px) {
+  .horarios {
+    padding-right: 0%;
+    font-size: 20px;
+    width: 25%;
+    line-height: 55px;
+  }
+}
+
+.mapa {
+  width: 100%;
+  height: 400px;
+}
+@media (min-width: 550px) {
+  .mapa {
+    padding: 10px;
+  }
+}
+@media (min-width: 720px) {
+  .mapa {
+    padding: 5%;
+  }
+}
+@media (min-width: 1080px) {
+  .mapa {
+    padding: 10px;
+    width: 50%;
+  }
+}
+
+/* footer */
+footer {
+  height: 162px;
+  background-color: #00487B;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  text-align: center;
+}
+
+.botonesfooter {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 15px;
+  grid-column: 1/6;
+  grid-row: 1/2;
+}
+.botonesfooter li a {
+  margin: 10px 10px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+@media (min-width: 1400px) {
+  .botonesfooter li a {
+    color: rgba(255, 255, 255, 0.877);
+  }
+  .botonesfooter li a:hover {
+    transition: 0.5s;
+    color: white;
+    font-size: 22px;
+  }
+}
+
+h6 {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin: 10px 10px;
+  grid-column: 1/6;
+  grid-row: 2/3;
+}
+
+.letrachica {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  grid-column: 2/5;
+  grid-row: 3/4;
+}
+
+/* pagina de contactos */
+.cajacontactos {
+  color: #00487B;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+@media (min-width: 550px) {
+  .cajacontactos {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+@media (min-width: 720px) {
+  .cajacontactos {
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+}
+@media (min-width: 1400px) {
+  .cajacontactos {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}
+
+.logoscontactos {
+  list-style: none;
+  width: 25%;
+  text-align: left;
+}
+.logoscontactos li {
+  margin-top: 12px;
+  margin-left: 8px;
+}
+@media (min-width: 550px) {
+  .logoscontactos li {
+    text-align: right;
+  }
+}
+.logoscontactos img {
+  width: 42px;
+  height: 44px;
+}
+@media (min-width: 720px) {
+  .logoscontactos img {
+    width: 46px;
+    height: 48px;
+  }
+}
+@media (min-width: 1400px) {
+  .logoscontactos img {
+    width: 50px;
+    height: 52px;
+  }
+}
+
+.direccionescontactos {
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  list-style: none;
+  width: 75%;
+}
+@media (min-width: 550px) {
+  .direccionescontactos {
+    padding-left: 15px;
+    font-size: 22px;
+  }
+}
+@media (min-width: 720px) {
+  .direccionescontactos {
+    line-height: 55px;
+    font-size: 28px;
+  }
+}
+@media (min-width: 1400px) {
+  .direccionescontactos {
+    line-height: 58px;
+    font-size: 32px;
+  }
+}
+.direccionescontactos li {
+  padding: 5px;
+}
+.direccionescontactos li a {
+  text-decoration: none;
+  color: #00487B;
+}
+.direccionescontactos li a:hover {
+  transition: 0.5s;
+  color: black;
+  font-size: 34px;
+}
+
+.invitacion {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  background-color: #00487B;
+  padding: 4px;
+}
+@media (min-width: 550px) {
+  .invitacion {
+    font-size: 24px;
+    padding: 6px;
+  }
+}
+@media (min-width: 720px) {
+  .invitacion {
+    font-size: 28px;
+    padding: 8px;
+  }
+}
+@media (min-width: 1400px) {
+  .invitacion {
+    font-size: 32px;
+    padding: 10px;
+  }
+}
+
+.section-CV {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 2px;
+}
+@media (min-width: 550px) {
+  .section-CV {
+    gap: 6px;
+  }
+}
+@media (min-width: 720px) {
+  .section-CV {
+    margin: 10px 50px;
+  }
+}
+@media (min-width: 1400px) {
+  .section-CV {
+    margin: 20px 150px;
+  }
+}
+.section-CV p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px;
+}
+@media (min-width: 550px) {
+  .section-CV p {
+    font-size: 22px;
+  }
+}
+@media (min-width: 720px) {
+  .section-CV p {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1080px) {
+  .section-CV p {
+    font-size: 26px;
+    gap: 5px;
+  }
+}
+@media (min-width: 1400px) {
+  .section-CV p {
+    font-size: 28px;
+    gap: 10px;
+  }
+}
+.section-CV button {
+  color: white;
+  padding: 8px 20px;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background-color: #00487B;
+  transition: all 0.1s ease;
+}
+@media (min-width: 550px) {
+  .section-CV button {
+    font-size: 18px;
+  }
+}
+@media (min-width: 720px) {
+  .section-CV button {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1080px) {
+  .section-CV button {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1400px) {
+  .section-CV button {
+    font-size: 24px;
+  }
+}
+.section-CV button:active {
+  transform: scale(0.96);
+}
+.section-CV .inputs {
+  padding: 5px;
+  width: 85%;
+  border-radius: 4px;
+  border: 1px solid #00487B;
+  text-align: center;
+  font-size: 16px;
+}
+@media (min-width: 550px) {
+  .section-CV .inputs {
+    width: 80%;
+    font-size: 20px;
+  }
+}
+@media (min-width: 720px) {
+  .section-CV .inputs {
+    font-size: 22px;
+    width: 75%;
+  }
+}
+@media (min-width: 1080px) {
+  .section-CV .inputs {
+    font-size: 24px;
+    width: 70%;
+  }
+}
+@media (min-width: 1400px) {
+  .section-CV .inputs {
+    font-size: 26px;
+    width: 65%;
+  }
+}
+.section-CV .cargaCV {
+  width: 85%;
+  padding: 7px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #00487B;
+  color: white;
+  font-size: 14px;
+}
+@media (min-width: 550px) {
+  .section-CV .cargaCV {
+    width: 70%;
+    font-size: 18px;
+  }
+}
+@media (min-width: 720px) {
+  .section-CV .cargaCV {
+    font-size: 20px;
+    width: 65%;
+  }
+}
+@media (min-width: 1080px) {
+  .section-CV .cargaCV {
+    font-size: 24px;
+    width: 60%;
+  }
+}
+@media (min-width: 1400px) {
+  .section-CV .cargaCV {
+    font-size: 26px;
+    width: 55%;
+  }
+}
+
+.menu {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  color: #00487B;
+  font-weight: bold;
+}
+.menu h4 {
+  font-size: 20px;
+  padding: 10px;
+}
+.menu p {
+  font-size: 16px;
+  padding: 2px 3%;
+}
+.menu .titulosmenu {
+  font-size: 30px;
+  color: white;
+  background-color: #00487B;
+  padding: 2px;
+  margin: 15px 0px;
+}
+.menu .subtitlemenu {
+  color: black;
+  font-size: 21px;
+  background-color: rgba(238, 238, 238, 0.527);
+}
+@media (min-width: 1080px) {
+  .menu .subtitlemenu {
+    margin: 12px;
+  }
+}
+.menu .equipo {
+  padding: 12px;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.header {
+  display: block;
+}
+
+/*# sourceMappingURL=styles.css.map */

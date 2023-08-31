@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+@import "variables";
+@import "extend";
+@import "mixin";
+@import "logocabeza";
+@import "navegador";
+@import "tarjetas";
+@import "main";
+@import "horariosmapa";
+@import "footer";
+@import "contactos";
+@import "menu";
+
+
+.header{
+    display: block;
+}

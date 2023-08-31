@@ -1,0 +1,84 @@
+
+/* linea de mejores 3 */
+
+h3{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 5px;
+    font-size: 24px;
+    color: white;
+    background-color: $main-color;
+    @media (min-width:720px){
+        font-size: 28px;
+        font-weight: bold;
+    }
+    @media (min-width:1400px){
+        background-size: 40px;
+    }
+   
+}
+.tarjetas-caja{
+    padding: 2px;
+    margin-top: 12px;
+    margin-left: 2px;
+    margin-right: 2px;
+    display: flex;
+    flex-direction: column;
+    @media (min-width:720px){
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 15px 8%;
+    }
+    
+}
+.tarjetas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    h4{
+        margin: 10px 5px;
+        font-size: 24px;
+        color: $main-color;
+        text-align: center;
+        grid-row: 1/2;
+        @media (min-width:550px){
+            font-size: 26px;
+        }
+        @media (min-width:720px){
+            height: 70px;
+            margin-top: 15px;
+            font-size: 28px;
+            color: $main-color;
+        }
+    }
+    p{
+        margin: 10px 5px;
+        font-size: 18px;
+        color: black;
+        text-align: center;
+        grid-row: 2/3;
+        @media (min-width:550px){
+            font-size: 20px;
+        }
+        @media (min-width:720px){
+        height: 78px;
+        margin-bottom: 15px;
+        font-size: 22px;
+        }
+    
+    }
+    img{
+        width: 80%; 
+        border-radius: 4px;
+        margin-bottom: 15px;
+        @media (min-width:550px){
+            width: 70%; 
+        }
+        @media (min-width:720px){
+        width: 80%; 
+        }
+    } 
+}

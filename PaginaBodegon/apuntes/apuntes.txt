@@ -1,0 +1,74 @@
+/* ejemplo de extend 
+
+sintaxis:
+
+@extend %nombredelaclase;
+
+el % para aclarar que es una extension
+*/
+
+//////////////////////////////////////////////////
+
+/* ejemplo de maps
+
+$redes:(twitter: #55acee,
+        facebook: #3a5795,
+        whatsapp: #4fcb5b,
+        );
+
+.redes{
+    blabla;
+    i(se lo aplico a unos iconos){
+        blabla;
+    }
+}
+*/
+
+/////////////////////////////////////////////////
+
+/* MIXINS
+
+/* lo mismo que el extend pero personalizable
+sintaxis:
+
+@mixin nombrequequiera ($variable, separada por coma de lo que quiero 
+que sea personalizable){
+    y aca adentro todas las propiedades
+    las variables que escribo en el parentesis tienen que estar aclaradas
+    aca, ej:
+    width: $widht y ese $width hace referencia a la variable escrita arriba.
+}
+y para usarlo seria
+ej: boton{
+    @include boton(red, white)
+}
+ahi incluyo el mixin con los valores red para la primera variable que 
+puse personalizable, y white para la segunda. pueden ser mas, o menos.
+
+*/
+
+/////////////////////////////////////////////////////
+
+/*
+EJEMPLO DE EACH:
+    @each $clave, $valor in $redes{
+        .#{$clave}{
+            color:$valor;
+        }
+    }
+
+EJEMPLO DE FOR:
+1   
+@for $i from 2 to 13{
+    .img#{$i}{
+        grid-area: img#(#i);
+    }
+}
+
+2   
+@for $i(o vuelta) from 1 to 4{
+        i:nth-child(#{$vuelta}){
+            color: aqua;
+    }
+}
+*/

@@ -1,0 +1,37 @@
+
+.menu{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: $main_color;
+    font-weight: bold;
+    
+    h4{
+        font-size: 20px;
+        padding: 10px;
+    }
+    p{
+        font-size: 16px;
+        padding: 2px 3%;
+    }
+    .titulosmenu{
+        font-size: 30px;
+        color: white;
+        background-color: $main_color;
+        padding: 2px;
+        margin: 15px 0px;
+    }
+    .subtitlemenu{
+        color: black;
+        font-size: 21px;
+        background-color: rgba(238, 238, 238, 0.527);
+        @media (min-width:1080px){
+            margin: 12px;
+        }
+    }
+    .equipo{
+        padding: 12px;
+        font-size: 14px;
+        font-weight: bolder;
+    }
+}
